@@ -1,5 +1,5 @@
 # pfsense-speedtestToInflux
-Bash scripts that can be run from cron on PFSense to periodically execute speedtest-cli and upload Internet connectivity performance data to an Influx DB database.
+Bash scripts that can be run from cron on PFSense to periodically execute speedtest-cli and upload Internet connectivity performance data to an Influx DB database. From there, you can graph performance over time with Grafana or create automations to take action for anomalies such as rebooting the cable modem.
 
 ## Prerequisites 
 - SSH access to PFSense shell
