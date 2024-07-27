@@ -10,11 +10,16 @@ Bash scripts that can be run from cron on PFSense to periodically execute speedt
 Copy or scp to /usr/local/bin:
 - speedtestToInflux.sh
 - cronRandomDelay.sh
-  
+
+```
 chmod +x speedtestToInflux.sh
 chmod +x cronRandomDelay.sh
 
 crontab -e
+```
 
 Add the following line to crontab to run the test 4 times per day, randomily within each 6 hour period:
+
+```
 0 */6 * * *	/usr/local/bin/cronRandomDelay.sh /usr/local/bin/speedtestToInflux.sh 21600
+```
